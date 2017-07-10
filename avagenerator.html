@@ -1,0 +1,171 @@
+<html>
+<head>
+	<script type="text/javascript">
+		function getRandom(min, max) {
+  			return Math.floor(Math.random() * (max - min)) + min;
+		}
+		function check() {
+			var bf = document.getElementById('background');
+			bf.className = '';
+			bf.classList.add("layer");
+			bf.classList.add('b' + getRandom(1, 8));
+
+			var bf = document.getElementById('hair');
+			bf.className = '';
+			bf.classList.add("layer");
+			bf.classList.add('h' + getRandom(1, 6));
+
+			var bf = document.getElementById('face');
+			bf.className = '';
+			bf.classList.add("layer");
+			bf.classList.add('f' + getRandom(1, 6));
+
+
+			var bf = document.getElementById('dress');
+			bf.className = '';
+			bf.classList.add("layer");
+			bf.classList.add('d' + getRandom(1, 6));
+
+
+			var bf = document.getElementById('mouth');
+			bf.className = '';
+			bf.classList.add("layer");
+			bf.classList.add('m' + getRandom(1, 6));
+		}
+	</script>
+	<style type="text/css">
+		.layer	{
+			display: block;
+			position: fixed;
+			top: 70px;
+			width: 700px;
+			height: 700px;
+			left:50%;
+			margin-left:-350px;
+			border-radius: 450px;
+		}
+
+		a {
+			font-weight: bold;
+			color: blue;
+			font-size: 32px;
+			text-decoration: none;
+		}
+
+
+		.b1 {
+			background: 0px 0px url(avagenerator_v1.png);
+		}
+		.b2 {
+			background: 0px 700px url(avagenerator_v1.png);
+		}
+		.b3 {
+			background: 0px 1400px url(avagenerator_v1.png);
+		}
+		.b4 {
+			background: 0px 2100px url(avagenerator_v1.png);
+		}
+		.b5 {
+			background: 0px 2800px url(avagenerator_v1.png);
+		}
+		.b6 {
+			background: 0px 3500px url(avagenerator_v1.png);
+		}
+		.b7 {
+			background: 0px 4200px url(avagenerator_v1.png);
+		}
+		.b8 {
+			background: 0px 4900px url(avagenerator_v1.png);
+		}
+
+
+		.h1 {
+			background: -700px 0px url(avagenerator_v1.png);
+		}
+		.h2 {
+			background: -700px -700px url(avagenerator_v1.png);
+		}
+		.h3 {
+			background: -700px -1400px url(avagenerator_v1.png);
+		}
+		.h4 {
+			background: -700px -2100px url(avagenerator_v1.png);
+		}
+		.h5 {
+			background: -700px -2800px url(avagenerator_v1.png);
+		}
+		.h6 {
+			background: -700px -3500px url(avagenerator_v1.png);
+		}
+
+
+		.f1 {
+			background: -1400px 0px url(avagenerator_v1.png);
+		}
+		.f2 {
+			background: -1400px -700px url(avagenerator_v1.png);
+		}
+		.f3 {
+			background: -1400px -1400px url(avagenerator_v1.png);
+		}
+		.f4 {
+			background: -1400px -2100px url(avagenerator_v1.png);
+		}
+		.f5 {
+			background: -1400px -2800px url(avagenerator_v1.png);
+		}
+		.f6 {
+			background: -1400px -3500px url(avagenerator_v1.png);
+		}
+
+
+		.d1 {
+			background: -2100px 0px url(avagenerator_v1.png);
+		}
+		.d2 {
+			background: -2100px -700px url(avagenerator_v1.png);
+		}
+		.d3 {
+			background: -2100px -1400px url(avagenerator_v1.png);
+		}
+		.d4 {
+			background: -2100px -2100px url(avagenerator_v1.png);
+		}
+		.d5 {
+			background: -2100px -2800px url(avagenerator_v1.png);
+		}
+		.d6 {
+			background: -2100px -3500px url(avagenerator_v1.png);
+		}
+
+
+		.m1 {
+			background: -2800px 0px url(avagenerator_v1.png);
+		}
+		.m2 {
+			background: -2800px -700px url(avagenerator_v1.png);
+		}
+		.m3 {
+			background: -2800px -1400px url(avagenerator_v1.png);
+		}
+		.m4 {
+			background: -2800px -2100px url(avagenerator_v1.png);
+		}
+		.m5 {
+			background: -2800px -2800px url(avagenerator_v1.png);
+		}
+		.m6 {
+			background: -2800px -3500px url(avagenerator_v1.png);
+		}
+	</style>
+</head>
+<body>
+	<div class="layer b6" id="background"></div>
+	<div class="layer h6" id="hair"></div>
+	<div class="layer f6" id="face"></div>
+	<div class="layer d2" id="dress"></div>
+	<div class="layer m5" id="mouth"></div>
+
+	<center><a href="#" onclick="check()">Ррррааааз</a></center>
+</body>
+</html>
